@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+        <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <header class="header">
@@ -29,17 +30,62 @@
             <li><a href="tel:+110001111111" class="header-contact list link">+11 (000) 111-11-11</a></li>
             </ul>
     </address>
+    <button type="button" class="mobile-menu-open" data-menu-open>
+        <svg class="mobile-menu-open-icon" width="32" heigth="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+        </svg>
+    </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu-container">
+            <button type="button" class="mobile-menu-close-button" data-menu-close>
+                <svg class="mobile-menu-close-button-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+            <ul class="header-list-mobile-menu list">
+                    <li class="header-item-menu list"><a href="./index.html" class="header-link-menu-studio link current">Studio</a></li>
+                    <li class="header-item-menu list"><a href="./portfolio.html" class="header-link-menu link">Portfolio</a></li>
+                    <li class="header-item-menu list"><a href="" class="header-link-menu link">Contacts</a></li>
+            </ul>
+            <ul class="header-adress-menu list ">
+                    <li><a href="tel:+110001111111" class="header-contact-menu-tel list link">+11 (000) 111-11-11</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="header-contact-menu-mail list link">info@devstudio.com</a></li>
+            </ul>
+        <ul class="menu-soc-list list">
+            <li class="menu-soc-item"><a class="menu-soc-link link" href>
+                    <svg class="menu-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg></a>
+            </li>
+            <li class="menu-soc-item"><a class="menu-soc-link link" href>
+                    <svg class="menu-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg></a>
+            </li>
+            <li class="menu-soc-item"><a class="menu-soc-link link" href>
+                    <svg class="menu-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg></a>
+            </li>
+            <li class="menu-soc-item"><a class="menu-soc-link link" href>
+                    <svg class="menu-soc-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg></a>
+            </li>
+        </ul>
+        </div>
         </div>
     </header>
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container hero-container">
             <h1 class="hero-text">Effective Solutions for Your Business</h1>
             <button type="button" data-modal-open class="hero-button text-button">Order Service</button>
             </div>
-        </section>
-        <section class="about">
-            <div class="container container-about">
+        </section> -->
+        <!-- <section class="about">
+            <div class="container about-container">
             <h2 class="about-advantage" hidden>our advantages</h2>
             <ul class="about-list list">
                 <li class="about-list-item">
@@ -62,9 +108,9 @@
                     <h3 class="about-item">Technologies</h3><p class="about-item-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p></li>
             </ul>
             </div>
-        </section>
-        <section class="gallary">
-            <div class="container">
+        </section> -->
+        <!-- <section class="gallary">
+            <div class="container gallary-container">
             <h2 class="gallary-text">What are we doing</h2>
             <ul class="list photo-container">
                 <li class="photo"><img src="./images/img1.jpg" alt="laptop" width="360"></li>
@@ -72,9 +118,9 @@
                 <li class="photo"><img src="./images/img3.jpg" alt="phone in the hand" width="360"></li>
             </ul>
             </div>
-        </section>
-        <section class="team">
-            <div class="container">
+        </section> -->
+        <!-- <section class="team">
+            <div class="container team-container">
             <h2 class="team-text">Our Team</h2>
             <ul class="team-list list">
                 <li class="team-item"><img src="./images/mark.jpg" alt="photo Mark Guerrero" width="264">
@@ -176,9 +222,9 @@
                 </li>
             </ul>
             </div>
-        </section>
-    <section class="customer">
-        <div class="container">
+        </section> -->
+    <!-- <section class="customer">
+        <div class="container customer-container">
             <h2 class="customer-text">Customers</h2>
             <div class="customer-list">
                 <ul class="customers-list-link list">
@@ -209,10 +255,11 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
     </main>
-    <footer class="footer">
-        <div class="container footer-blok">
+    <!-- <footer class="footer">
+        <div class="container footer-container">
+            <div class="logo-soc-list">
         <div class="footer-logo-blok">
             <a href="./index.html" class="footer-logo-web footer-logo link">Web<span
                     class="footer-logo-studio link">Studio</span></a>
@@ -239,6 +286,7 @@
                         <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg></a></li>
         </ul></div>
+            </div>
     <div class="container-footer-input">
         <p class="footer-text-input">Subscribe</p>
         <form class="footer-input-form">
@@ -250,8 +298,8 @@
         </form>
     </div>
         </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop" data-modal>
     <div class="modal">
         <button type="button" data-modal-close class="modal-close-bnt"><svg class="modal-close-btn-icon" widht="8" height="8">
                 <use href="./images/icons.svg#icon-close-modal"></use>
@@ -299,7 +347,8 @@
             <button type="submit" class="button-form">Send</button>
     </form>
     </div> 
-</div>
+</div> -->
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
