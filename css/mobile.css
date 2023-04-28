@@ -141,7 +141,7 @@ transform: translate(-50%, -50%) rotate(-90deg) scaleY(0)}
         visibility: visible;
         pointer-events: auto;}
 
-    .mobile-menu-container {position: relative;
+.mobile-menu-container {position: relative;
 width: 100%;}
 .mobile-menu-container {padding-left: 40px;
 padding-right: 35px;
