@@ -560,8 +560,7 @@ justify-content: center;}
 .backdrop {
     position: fixed;
     top: 0;
-    width: 428px;
-    height: 796px;
+    width: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 1000ms linear, visibility 1000ms linear;
 }
@@ -625,7 +624,7 @@ justify-content: center;}
     pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal {width: 100%;
     transform: translate(-50%, -50%) rotate(-90deg) scaleY(0)
 }
 
