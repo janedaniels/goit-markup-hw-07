@@ -1,10 +1,4 @@
 @media screen and (min-width: 320px) and (max-width: 427px) {
-.backdrop {width: 100%;
-        height: 100%;}
-
-.modal {width: 90%;
-        min-height: 95%;
-max-height: 524px;}
 .header-list-mobile-menu {margin-bottom: 200px;}
 .header-contact-menu-tel {font-size: 24px;}
 }
@@ -16,8 +10,7 @@ max-height: 524px;}
 
 @media screen and (min-width: 428px) {
 .gallary-container {display: none;}
-.team-container {width: 428px;
-        padding-left: 82px;
+.team-container {padding-left: 82px;
         padding-right: 82px;}
 .about-item {text-align: center;}
 /* ============================================== */
@@ -48,8 +41,7 @@ max-height: 524px;}
 .header-navigation {display: flex;}
 .header-logo-studio {margin-right: 120px;}
 
-.header-container {width: 768px;
-        display: flex;
+.header-container {display: flex;
 justify-content: space-between;
 align-items: center;}
 .current {position: relative;}
@@ -73,16 +65,14 @@ align-items: center;}
         height: 1px;
         color: #E7E9FC;}
 .mobile-menu-open {display: none;}
-
-
-.hero-container {width: 768px;}
+.hero-container {}
 .hero-text {width: 496px;
         font-size: 56px;
         line-height: 60px;
         margin-bottom: 32px;
         padding-left: 0px;
         padding-right: 0px;}
-    .about-container {width: 768px; height: 504px;}
+    .about-container {}
     .icon-top {display: none;}
     .about-list {width: 100%; gap: 24px;}
     .about-item {text-align: left;}
@@ -92,14 +82,13 @@ align-items: center;}
     /* =========================================== */
     .gallary-container {display: none;}
     /* =================================================== */
-    .team-container {width: 768px;
-        padding-left: 108px;
+    .team-container {padding-left: 108px;
         padding-right: 108px;}
     .team-list {width: 100%; gap: 24px;}
     .team-item {width: calc((100% - 24px) / 2);
         margin-bottom: 40px;}
 /* ================================================ */
-.customer-container {width: 768px;
+.customer-container {
 padding-left: 108px;
 padding-right: 108px;}
 .customers-list-link {gap: 24px;}
@@ -109,8 +98,7 @@ padding-right: 108px;}
 .customer-item:nth-child(5) {margin-bottom: 0;}
 .customer-item:nth-child(6) {margin-bottom: 0;}
 /* ================================================== */
-.footer-container {width: 768px;
-        padding-left: 108px;
+.footer-container {padding-left: 108px;
         padding-right: 108px;}
 .logo-soc-list {width: 100%;
 flex-wrap: nowrap;
@@ -125,18 +113,19 @@ gap: 24px;
 justify-content: left;}
 .footer-input {width: calc((100% - 24px) / 2);}
 /* ============================================= */
-.backdrop {width: 768px; height: 1018px;}
-.modal {width: 408px;
+.backdrop {width: 100%; height: 1018px;}}
+/* .modal {width: 408px;
         min-height: 584px;
         padding-right: 23px;
-        padding-left: 25px;}}
+        padding-left: 25px;} */
 
 
 @media screen and (min-width: 1158px) {
 .container {width: 1440px;
 padding-left: 156px;
 padding-right: 156px;}
-.header-container {padding-top: 25.5px;
+.header-container {
+        padding-top: 25.5px;
         padding-bottom: 25.5px;}
 .header-list {display: flex;
         gap: 40px;
@@ -213,7 +202,6 @@ padding-right: 156px;}
         text-transform: capitalize;
         color: var(--brand-color);}
 /* ==================================================== */
-.team-container {}
 .team-list {flex-wrap: nowrap;}
 .team-item {width: calc((100% - 72px) / 4);
         margin-bottom: 0;}
@@ -237,11 +225,11 @@ justify-content: center;}
 .footer-input-form {height: 40px;}
 .footer-input {margin-bottom: 0px;
 margin-top: 0px;
-max-width: 453px;}
-.backdrop {width: 100%;}
+max-width: 453px;}}
+/* .backdrop {width: 100%;}
 .modal {width: 408px; min-height: 584px;
         padding-right: 24px;
-        padding-left: 24px;}}
+        padding-left: 24px;}} */
 
 
 
