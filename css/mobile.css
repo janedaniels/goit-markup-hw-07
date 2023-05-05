@@ -25,20 +25,22 @@ img {display: block;
 max-width: 100%;
 height: auto;}
 
-.container {width: 428px;
+.container {max-width: 428px;
 padding-top: 96px;
 padding-bottom: 96px;
-padding-left: 16px;
-padding-right: 16px;
-margin: 0;}
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;}
 /* ===================================HEADER================================ */
-.header-container {
+.header-container {width: 100%;
     background: var(--color-light);
     border-bottom: 1px solid #E7E9FC;
     padding-top: 16px;
     padding-bottom: 16px;
     display: flex;
-    justify-content: space-between;}
+    justify-content: space-between;
+align-items: center;}
 .mobile-menu-open {background-color: transparent; 
     border: none;
     padding: 0;
@@ -228,7 +230,7 @@ margin-bottom: 48px;}
     margin-bottom: 72px;
     padding: 0;} */
 /* ===============================ABOUT=============================== */
-.about-container {}
+.about-container {width: 100%;}
 .icon-top {display: none;}
 .about-list {width: 100%;
     display: flex;
@@ -250,9 +252,8 @@ margin-bottom: 48px;}
     color: var(--color-text);}
 .icon-top {display: none;}
     /* ========================TEAM======================================= */
-.team-container {padding-left: 32px;
-        padding-right: 32px;
-        background-color: var(--color-logo2);}
+.team-container {width: 100%;
+    background-color: var(--color-logo2);}
 .team-text {font-weight: 700;
     font-size: 36px;
     line-height: 40px;
@@ -263,9 +264,9 @@ margin-bottom: 48px;}
     margin-bottom: 72px;}
 .team-list {display: flex;
     flex-wrap: wrap;
-    gap: 72px;}
-.team-item {width: 100%;
-    background-color: var(--color-light);}
+    gap: 72px;
+justify-content: center;}
+.team-item {background-color: var(--color-light);}
 .team-list-item {padding-top: 32px;
     border: 1px solid #E7E9FC;
     border-top: none;
@@ -335,7 +336,7 @@ margin-bottom: 48px;}
 .customer-link:focus {border-color: var(--color-hoover);}
 
 /* ==========================Footer============================= */
-.footer-container {
+.footer-container {width: 100%;
     background: var(--brand-color);
     display: flex;
     flex-wrap: wrap;
@@ -502,15 +503,14 @@ justify-content: center;}
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
 
 /* ======================HERO========================== */
-.hero-container {
+.hero-container {width: 100%;
     padding-top: 112px;
     padding-bottom: 112px;
     background: var(--brand-color);
-    /* background-image: url(../images/dark-bg.png), url(../images/people-office-1.jpg);
+    background-image: url(../images/dark-bg.png), url(../images/people-office-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;} */
-}
+    background-size: cover;}
 .hero-text {text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-light);
@@ -566,7 +566,7 @@ justify-content: center;}
 }
 
 .modal {
-    width: 392px;
+    width: 100%;
     min-height: 584px;
     padding-top: 72px;
     padding-right: 16px;
