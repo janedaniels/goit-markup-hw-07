@@ -33,14 +33,14 @@ padding-right: 15px;
 margin-left: auto;
 margin-right: auto;}
 /* ===================================HEADER================================ */
-.header-container {width: 100%;
+.header-container {max-height: 70px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     background: var(--color-light);
     border-bottom: 1px solid #E7E9FC;
-    padding-top: 16px;
-    padding-bottom: 16px;
     display: flex;
     justify-content: space-between;
-align-items: center;}
+    align-items: center;}
 .mobile-menu-open {background-color: transparent; 
     border: none;
     padding: 0;
@@ -229,8 +229,7 @@ margin-bottom: 48px;}
     color: var(--brand-color);
     margin-bottom: 72px;
     padding: 0;} */
-/* ===============================ABOUT=============================== */
-.about-container {width: 100%;}
+
 .icon-top {display: none;}
 .about-list {width: 100%;
     display: flex;
@@ -252,8 +251,7 @@ margin-bottom: 48px;}
     color: var(--color-text);}
 .icon-top {display: none;}
     /* ========================TEAM======================================= */
-.team-container {width: 100%;
-    background-color: var(--color-logo2);}
+.team-container {background-color: var(--color-logo2);}
 .team-text {font-weight: 700;
     font-size: 36px;
     line-height: 40px;
@@ -336,11 +334,14 @@ justify-content: center;}
 .customer-link:focus {border-color: var(--color-hoover);}
 
 /* ==========================Footer============================= */
-.footer-container {width: 100%;
-    background: var(--brand-color);
+.footer {background: var(--brand-color);}
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;}
+.footer-container-content {display: flex;
+    flex-wrap: wrap;
+gap: 72px;}
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -503,7 +504,7 @@ justify-content: center;}
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
 
 /* ======================HERO========================== */
-.hero-container {width: 100%;
+.hero-container {
     padding-top: 112px;
     padding-bottom: 112px;
     background: var(--brand-color);
@@ -565,8 +566,7 @@ justify-content: center;}
     transition: opacity 1000ms linear, visibility 1000ms linear;
 }
 
-.modal {
-    width: 100%;
+.modal {width: 100%;
     min-height: 584px;
     padding-top: 72px;
     padding-right: 16px;

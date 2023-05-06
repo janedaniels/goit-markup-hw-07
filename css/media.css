@@ -24,8 +24,7 @@
 
 @media screen and (min-width: 768px) {
 .container {max-width: 768px;}
-.hero-container {width: 100%;}
-
+.header-container {max-height: 72px;}
 .header-list {display: flex;
         gap: 40px;
         font-family: 'Roboto';
@@ -42,8 +41,7 @@
 .header-navigation {display: flex;}
 .header-logo-studio {margin-right: 120px;}
 
-.header-container {width: 100%;
-        display: flex;
+.header-container {display: flex;
 justify-content: space-between;
 align-items: center;}
 .current {position: relative;}
@@ -67,16 +65,14 @@ align-items: center;}
         height: 1px;
         color: #E7E9FC;}
 .mobile-menu-open {display: none;}
-.hero-container {width: 100%;}
 .hero-text {width: 496px;
         font-size: 56px;
         line-height: 60px;
         margin-bottom: 32px;
         padding-left: 0px;
         padding-right: 0px;}
-    .about-container {width: 100%;}
     .icon-top {display: none;}
-    .about-list {width: 100%; gap: 24px;}
+    .about-list {gap: 24px;}
     .about-item {text-align: left;}
     .about-list-item {width: calc((100% - 24px) / 2); margin-bottom: 48px;}
     .about-list-item:nth-child(3) {margin-bottom: 0;}
@@ -84,16 +80,11 @@ align-items: center;}
     /* =========================================== */
     .gallary-container {display: none;}
     /* =================================================== */
-    .team-container {width: 100%;
-padding-left: 108px;
-padding-right: 108px;}
-    .team-list {width: 100%; gap: 24px;}
-    .team-item {width: calc((100% - 24px) / 2);
-        margin-bottom: 40px;}
+    .team-container {}
+    .team-list {gap: 24px;}
+    .team-item {margin-bottom: 40px;}
 /* ================================================ */
-.customer-container {width: 100%;
-padding-left: 108px;
-padding-right: 108px;}
+.customer-container {}
 .customers-list-link {gap: 24px;}
 .customer-item {margin-bottom: 48px;}
 .customer-link {width: 168px; height: 88px;}
@@ -101,21 +92,21 @@ padding-right: 108px;}
 .customer-item:nth-child(5) {margin-bottom: 0;}
 .customer-item:nth-child(6) {margin-bottom: 0;}
 /* ================================================== */
-.footer-container {width: 100%;
-padding-left: 108px;
-padding-right: 108px;}
+.footer-container {}
 .logo-soc-list {width: 100%;
 flex-wrap: nowrap;
 gap: 24px;
-justify-content: left;}
+justify-content: left;
+margin-left: 93px;}
 .footer-soc-text {text-align: left;}
 .footer-logo {justify-content: left;}
 .footer-soc-text {text-align: start;}
-.container-footer-input {justify-content: left;}
+.container-footer-input {justify-content: left;
+margin-left: 93px;}
 .footer-input-form {display: flex;
 gap: 24px;
 justify-content: left;}
-.footer-input {width: calc((100% - 24px) / 2);}
+.footer-input {width: 264px;}
 /* ============================================= */
 .backdrop {width: 100%; height: 1018px;}
 .modal {width: 408px;
@@ -125,12 +116,10 @@ justify-content: left;}
 
 
 @media screen and (min-width: 1158px) {
-.container {max-width: 1440px;}
-.header-container {width: 100%;
+.container {max-width: 1158px;}
+.header-container {
         padding-top: 24px;
-        padding-bottom: 24px;
-padding-left: 156px;
-padding-right: 156px;}
+        padding-bottom: 24px;}
 .header-container {display: flex;
         align-items: center;}
 .header-list {display: flex;
@@ -171,34 +160,29 @@ padding-right: 156px;}
     height: 1px;
     color: #E7E9FC;}
 .mobile-menu-open {display: none;}
-.hero-container {width: 100%;
+.hero-container {max-width: 1440px;
+        height: 600px;
         padding-bottom: 188px;}
 .hero-text {width: 496px;
         margin-bottom: 48px;
         font-size: 56px;
         line-height: 60px;}
-.about-container {width: 100%;
-padding-left: 156px;
-padding-right: 156px;}
-.about-list {width: 100%;
-        flex-wrap: nowrap;
+.about-list {flex-wrap: nowrap;
         gap: 24px;}
 .about-list-item {width: calc((100% - 72px) / 4); margin-bottom: 0;}
-.icon-top {display: flex;
+.icon-top {height: 112px;
+        display: flex;
         justify-content: center;
         align-items: center;
         background-color: var(--color-logo2);
         border-radius: 4px;
-        height: 112px;
         margin-bottom: 8px;}
 .about-item {font-weight: 500;
         font-size: 20px;
         line-height: 24px;}
 .about-item-text {font-weight: 400;}
 /* ============================================= */
-.gallary-container {width: 100%;
-        padding-left: 156px;
-        padding-right: 156px;
+.gallary-container {
         display: flex;
         flex-wrap: wrap;
         gap: 72px;
@@ -216,37 +200,39 @@ padding-right: 156px;}
         text-transform: capitalize;
         color: var(--brand-color);}
 /* ==================================================== */
-.team-container {width: 100%;
-padding-left: 15px;
-padding-right: 15px;}
-.team-list {width: 100%;
-        margin-bottom: 0;}
-.team-item {width: calc((100% - 72px) / 4)}
-.team-list-item {width: 100%;} 
+.team-container {max-width: 1440px;}
+.team-list {margin-bottom: 0;}
+ 
 /* ================================================= */
-.customer-container {width: 100%;}
 .customers-list-link {flex-wrap: nowrap; gap: 24px;}
 .customer-item {margin-bottom: 0px;}
-.customer-link {width: 168px; height: 88px;}
+/* .customer-link {width: 168px; height: 88px;} */
 /* =================================================== */
-.footer-container {width: 100%;
+.footer-container {max-width: 1440px;
         padding-top: 100px;
-        padding-bottom: 100px;
-        padding-left: 15px;
-        padding-right: 15px;}
-
-.logo-soc-list {width: 620px;
+        padding-bottom: 100px;}
+.footer-container-content {width: 1158px;
+        display: flex;
         flex-wrap: nowrap;
-        gap: 120px;
-        justify-content: space-between;}
-.container-footer-input {width: 453px;
-        height: 80px;}
-.footer-logo-blok {margin-right: 120px;}
-.container-footer-input {margin-left: auto;}
-.footer-input-form {height: 40px;}
-.footer-input {margin-bottom: 0px;
-margin-top: 0px;
-max-width: 453px;}
+        gap: 80px;} 
+.logo-soc-list {flex-wrap: nowrap;
+        gap: 120px;}
+.footer-soc-text {text-align: left;}
+
+.footer-logo {justify-content: left;}
+
+.footer-soc-text {text-align: start;}
+
+.container-footer-input {
+align-items: center;}
+
+.footer-input-form {display: flex;
+        gap: 24px;
+        justify-content: left;
+        min-width: 453px;
+        height: 40px;}
+
+
 .backdrop {width: 100%;}
 .modal {width: 408px; min-height: 584px;
         padding-right: 24px;
