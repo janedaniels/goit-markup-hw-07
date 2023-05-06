@@ -237,7 +237,7 @@ align-items: center;}
 /* .backdrop {position: fixed;
 top: 0;
 width: 100%;
-height: 100%;
+height: 100%; 
 background-color: rgba(46, 47, 66, 0.4);
 transition: opacity 1000ms linear, visibility 1000ms linear;} 
 
