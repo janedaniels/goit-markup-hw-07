@@ -30,13 +30,13 @@
             <li><a href="tel:+110001111111" class="header-contact list link">+11 (000) 111-11-11</a></li>
             </ul>
     </address>
-    <button type="button" class="mobile-menu-open" data-menu-open>
+    <button type="button" data-menu-open class="mobile-menu-open">
         <svg class="mobile-menu-open-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
         </svg>
     </button>
         </div>
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu is-hidden" data-menu>
             <div class="mobile-menu-container">
             <button type="button" class="mobile-menu-close-button" data-menu-close>
                 <svg class="mobile-menu-close-button-icon" width="8" height="8">
@@ -113,9 +113,9 @@
             <div class="container gallary-container">
             <h2 class="gallary-text">What are we doing</h2>
             <ul class="list photo-container">
-                <li class="photo"><img src="./images/img1.jpg" alt="laptop" width="360"></li>
-                <li class="photo"><img src="./images/img2.jpg" alt="smartphones" width="360"></li>
-                <li class="photo"><img src="./images/img3.jpg" alt="phone in the hand" width="360"></li>
+                <li class="photo"><img src="./images/img1.jpg" alt="laptop" srcset="./images_adopt/monitor_x2.jpg 2x" width="360"></li>
+                <li class="photo"><img src="./images/img2.jpg" alt="smartphones" srcset="./images_adopt/smartfon_x2.jpg 2x" width="360"></li>
+                <li class="photo"><img src="./images/img3.jpg" alt="phone in the hand" srcset="./images_adopt/rectangle_x2.jpg 2x" width="360"></li>
             </ul>
             </div>
         </section>
@@ -123,7 +123,7 @@
             <div class="container team-container">
             <h2 class="team-text">Our Team</h2>
             <ul class="team-list list">
-                <li class="team-item"><img class="team-photo" src="./images/mark.jpg" alt="photo Mark Guerrero" width="264">
+                <li class="team-item"><img class="team-photo" src="./images/mark.jpg" alt="photo Mark Guerrero" srcset="./images_adopt/mark_x2.jpg 2x" width="264">
                     <div class="team-list-item">
                         <h3 class="name">Mark Guerrero</h3>
                         <p class="item-text">Product Designer</p>
@@ -147,7 +147,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="team-item"><img  class="team-photo" src="./images/tom.jpg" alt="photo Tom Ford" width="264">
+                <li class="team-item"><img  class="team-photo" src="./images/tom.jpg" alt="photo Tom Ford" srcset="./images_adopt/tom_x2.jpg 2x" width="264">
                     <div class="team-list-item">
                         <h3 class="name">Tom Ford</h3>
                         <p class="item-text">Frontend Developer</p>
@@ -172,7 +172,7 @@
                     </div>
                 </li>
                 <li class="team-item">
-                    <img class="team-photo" src="./images/camila.jpg" alt="photo Camila Garcia" width="264">
+                    <img class="team-photo" src="./images/camila.jpg" alt="photo Camila Garcia" srcset="./images_adopt/camila_x2.jpg 2x" width="264">
                     <div class="team-list-item">
                         <h3 class="name">Camila Garcia</h3>
                         <p class="item-text">Marketing</p>
@@ -196,7 +196,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="team-item"><img class="team-photo" src="./images/daniel.jpg" alt="photo Daniel Wilson" width="264">
+                <li class="team-item"><img class="team-photo" src="./images/daniel.jpg" alt="photo Daniel Wilson" srcset="./images_adopt/daniel_x2.jpg 2x" width="264">
                     <div class="team-list-item">
                         <h3 class="name">Daniel Wilson</h3>
                         <p class="item-text">UI Designer</p>
@@ -298,7 +298,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop" is-hidden data-modal>
+    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" data-modal-close class="modal-close-bnt"><svg class="modal-close-btn-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-modal"></use>
@@ -347,7 +347,7 @@
     </form>
     </div> 
 </div>
-<script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js" type="module"></script>
+<script src="./js/mobile-menu.js" type="module"></script>
 </body>
 </html>
